@@ -1,4 +1,4 @@
-ll 查看当前目录的文件
+ls(ll) : 查看当前目录的文件
 
 
 cat he.txt  查看文件内容
@@ -19,9 +19,51 @@ git rm --cached he.txt 将文件从暂存区删除
 git commit -m "日志信息" 文件名
 git commit -m "日志信息" he.txt
 
-查看版本号信息   gitreflog
+查看版本号信息   git reflog
 
 git log 查看详细提交信息 
 
 
  版本穿梭  git reset --hard "版本号"
+
+
+git branch -v   查看分支
+
+git branch hot-fix  创建一个hot-fix分支
+
+git checkout hot-fix 切换分支
+
+
+合并分支  站在matser上   git merge hot-fix
+
+git-hub HTTPS  https://github.com/lovettsh/gitprofile.git
+
+创建远程库别名 
+
+git remote -v  查看创建的远程库别名
+git remote add gitprofile https://github.com/lovettsh/gitprofile.git   别名是gitprofile
+
+推送远程库
+git push gitprofile master    从本地库推送远程库后面需要跟  别名、分支
+
+远程库拉取到本地库
+git pull gitprofile master    从远程库拉取到本地库后面需要跟  别名、分支
+
+
+只允许外人clone
+clone   拉取代码、初始化本地库、创建别名
+
+邀请团队内部协作
+ 
+登录主人的github    进入仓库 setting-Mange access-Invite a collaborator-找到邀请函Pending Invite复制，被邀请人在自己的github粘贴
+
+
+跨团队协作 
+点击右上角的Fork，修改代码后 ,Pull requests-New pull requests-Create pull requests
+
+github 口令 
+setting-Developer settings-Personal access tokens
+
+
+gitee可以实现将github代码仓库复制，在gitee上创建仓库时，最下方有一个复制链接
+
