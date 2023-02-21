@@ -1,0 +1,27 @@
+ll 查看当前目录的文件
+
+
+cat he.txt  查看文件内容
+
+tail -n 1 he.txt 查看文件内容末尾第一行
+
+git status  查看文件状态      红色文件表示文件在工作区，没有被追踪到
+
+ 
+
+git status  查看文件状态      绿色文件表示文件在暂存区，文件被追踪到 
+
+
+
+git rm --cached he.txt 将文件从暂存区删除
+
+将暂存区的文件提交到本地库
+git commit -m "日志信息" 文件名
+git commit -m "日志信息" he.txt
+
+查看版本号信息   gitreflog
+
+git log 查看详细提交信息 
+
+
+ 版本穿梭  git reset --hard "版本号"
